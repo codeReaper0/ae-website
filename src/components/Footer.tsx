@@ -66,10 +66,10 @@ export default function Footer() {
               Greenock, PA15 1BT, UK
               <br />
               <a
-                href="mailto:info@afroeuropean.com"
+                href="mailto:info@afro-european.com"
                 className="text-[#E9B44C] hover:text-white transition-colors"
               >
-                info@afroeuropean.com
+                info@afro-european.com
               </a>
             </div>
           </div>
