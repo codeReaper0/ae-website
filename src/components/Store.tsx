@@ -182,11 +182,11 @@ export default function Store() {
             UK postage included in price
           </span>
           <a
-            href="mailto:info@afroeuropean.uk"
+            href="mailto:info@afroeuropean.com"
             className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-[#0A1931]/60 hover:text-[#0A1931] transition-colors"
           >
             <Mail size={16} className="text-[#C8963E]" />
-            Questions? info@afroeuropean.uk
+            Questions? info@afroeuropean.com
           </a>
         </motion.div>
       </div>
