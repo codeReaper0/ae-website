@@ -1,5 +1,11 @@
 import {motion} from "framer-motion";
-import {ArrowDown, ArrowUpRight, BriefcaseBusiness, MapPin, Sparkles} from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  BriefcaseBusiness,
+  MapPin,
+  Sparkles,
+} from "lucide-react";
 
 const roles = [
   {
@@ -88,7 +94,9 @@ export default function Careers() {
               <span className="text-[#E9B44C]">mean more.</span>
             </h1>
             <p className="mt-7 max-w-[580px] text-[16px] leading-[1.75] text-white/65 md:text-[18px]">
-              Language brings people closer. Join us in creating learning experiences that help people discover new languages, understand different cultures, and connect with the world.
+              Language brings people closer. Join us in creating learning
+              experiences that help people discover new languages, understand
+              different cultures, and connect with the world.
             </p>
             <a
               href="#open-positions"
@@ -107,15 +115,30 @@ export default function Careers() {
       <section className="border-b border-[#0A1931]/10 bg-[#E9B44C]">
         <div className="mx-auto grid max-w-[1280px] gap-4 px-6 py-6 sm:grid-cols-3 lg:px-8">
           {[
-            {title: "Purpose-led work", detail: "Help culture travel across generations."},
-            {title: "A world of languages", detail: "Make learning feel human and alive."},
-            {title: "Room to make an impact", detail: "Bring your ideas, care, and craft."},
+            {
+              title: "Purpose-led work",
+              detail: "Help culture travel across generations.",
+            },
+            {
+              title: "A world of languages",
+              detail: "Make learning feel human and alive.",
+            },
+            {
+              title: "Room to make an impact",
+              detail: "Bring your ideas, care, and craft.",
+            },
           ].map((item, index) => (
             <div key={item.title} className="flex items-start gap-3 py-2">
-              <span className="mt-0.5 font-display text-[15px] font-bold text-[#0A1931]/50">0{index + 1}</span>
+              <span className="mt-0.5 font-display text-[15px] font-bold text-[#0A1931]/50">
+                0{index + 1}
+              </span>
               <div>
-                <h2 className="font-display text-[17px] font-bold text-[#0A1931]">{item.title}</h2>
-                <p className="mt-1 text-[12px] leading-relaxed text-[#0A1931]/70">{item.detail}</p>
+                <h2 className="font-display text-[17px] font-bold text-[#0A1931]">
+                  {item.title}
+                </h2>
+                <p className="mt-1 text-[12px] leading-relaxed text-[#0A1931]/70">
+                  {item.detail}
+                </p>
               </div>
             </div>
           ))}
@@ -133,7 +156,9 @@ export default function Careers() {
             >
               <div className="mb-4 inline-flex items-center gap-2">
                 <span className="h-px w-8 bg-[#C8963E]" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#0A1931]/55">Open positions</span>
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#0A1931]/55">
+                  Open positions
+                </span>
               </div>
               <h2 className="font-display text-[40px] font-bold leading-[0.95] tracking-[-0.03em] text-[#0A1931] md:text-[56px]">
                 Find your place
@@ -142,7 +167,8 @@ export default function Careers() {
               </h2>
             </motion.div>
             <p className="max-w-[370px] text-[14px] leading-[1.7] text-[#0A1931]/60">
-              Bring your perspective to a team helping people feel closer to language, culture, and one another.
+              Bring your perspective to a team helping people feel closer to
+              language, culture, and one another.
             </p>
           </div>
 
@@ -157,17 +183,29 @@ export default function Careers() {
                 className="group flex min-h-[310px] flex-col rounded-[24px] border border-[#0A1931]/[0.08] bg-white p-7 shadow-[0_10px_36px_rgba(10,25,49,0.035)] transition-all duration-300 hover:-translate-y-1 hover:border-[#E9B44C]/70 hover:shadow-[0_18px_45px_rgba(10,25,49,0.09)] md:p-8"
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-display text-[15px] font-bold text-[#C8963E]">{role.icon}</span>
+                  <span className="font-display text-[15px] font-bold text-[#C8963E]">
+                    {role.icon}
+                  </span>
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFFBF5] text-[#0A1931] transition-colors group-hover:bg-[#E9B44C]">
                     <ArrowUpRight size={18} />
                   </span>
                 </div>
-                <h3 className="mt-7 font-display text-[23px] font-bold leading-tight text-[#0A1931]">{role.title}</h3>
-                <p className="mt-3 text-[13px] leading-[1.7] text-[#0A1931]/60">{role.description}</p>
+                <h3 className="mt-7 font-display text-[23px] font-bold leading-tight text-[#0A1931]">
+                  {role.title}
+                </h3>
+                <p className="mt-3 text-[13px] leading-[1.7] text-[#0A1931]/60">
+                  {role.description}
+                </p>
                 <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[#0A1931]/[0.08] pt-5 mt-6 text-[10px] font-bold uppercase tracking-[0.1em] text-[#0A1931]/50">
-                  <span className="inline-flex items-center gap-1.5"><BriefcaseBusiness size={13} /> Full-time</span>
-                  <span className="inline-flex items-center gap-1.5"><MapPin size={13} /> Onsite</span>
-                  <span className="w-full text-[#0A1931]/65">{role.department}</span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <BriefcaseBusiness size={13} /> Full-time
+                  </span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <MapPin size={13} /> Onsite
+                  </span>
+                  <span className="w-full text-[#0A1931]/65">
+                    {role.department}
+                  </span>
                 </div>
                 <a
                   href={role.href}
@@ -183,10 +221,18 @@ export default function Careers() {
 
           <div className="mt-12 flex flex-col items-start justify-between gap-5 rounded-[24px] bg-[#0A1931] px-7 py-8 text-white md:flex-row md:items-center md:px-10">
             <div>
-              <p className="font-display text-[22px] font-bold">Don’t see your role?</p>
-              <p className="mt-1 text-[13px] text-white/60">We’re always interested in meeting people who care about language and culture.</p>
+              <p className="font-display text-[22px] font-bold">
+                Don’t see your role?
+              </p>
+              <p className="mt-1 text-[13px] text-white/60">
+                We’re always interested in meeting people who care about
+                language and culture.
+              </p>
             </div>
-            <a href="mailto:info@afro-european.com?subject=Careers%20enquiry" className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/25 px-5 py-3 text-[12px] font-bold transition-colors hover:border-[#E9B44C] hover:bg-[#E9B44C] hover:text-[#0A1931]">
+            <a
+              href="mailto:aerecruitment@mylingoatlas.com?subject=Careers%20enquiry"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full border border-white/25 px-5 py-3 text-[12px] font-bold transition-colors hover:border-[#E9B44C] hover:bg-[#E9B44C] hover:text-[#0A1931]"
+            >
               Introduce yourself <ArrowUpRight size={15} />
             </a>
           </div>

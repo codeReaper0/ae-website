@@ -153,9 +153,12 @@ export default function Team() {
               cultural innovators.
             </div>
           </div>
-          <button className="px-6 py-3 rounded-full bg-[#E9B44C] text-[#0A1931] text-[13px] font-bold whitespace-nowrap">
+          <a
+            href="/careers"
+            className="px-6 py-3 rounded-full bg-[#E9B44C] text-[#0A1931] text-[13px] font-bold whitespace-nowrap"
+          >
             View Open Roles →
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
