@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
+import AnimatedSeries from "../components/AnimatedSeries";
 import Languages from "../components/Languages";
 import Team from "../components/Team";
 import Vision from "../components/Vision";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <AnimatedSeries />
       <Languages />
 
       {/* Stats strip */}
