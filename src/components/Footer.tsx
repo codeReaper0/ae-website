@@ -168,9 +168,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Animation Studio
-                </a>
+                <Link to="/animated-series" className="hover:text-white transition-colors">
+                  The Ekundayos
+                </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">

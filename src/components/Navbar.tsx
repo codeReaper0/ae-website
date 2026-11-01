@@ -16,6 +16,7 @@ const navLinks = [
   {name: "Languages", href: "/", hash: "#languages"},
   {name: "Team", href: "/", hash: "#team"},
   {name: "Store", href: "/", hash: "#store"},
+  {name: "Animation", href: "/animated-series"},
   {name: "Careers", href: "/careers"},
   {name: "Contact", href: "/contact"},
 ];
