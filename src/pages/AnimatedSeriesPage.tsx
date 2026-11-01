@@ -108,7 +108,7 @@ export default function AnimatedSeriesPage() {
               ))}
             </div>
             <div className="absolute bottom-5 left-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">
-              A family story · Rooted in Nigeria
+              A family story · Rooted in Europe/Africa
             </div>
           </motion.div>
         </div>
