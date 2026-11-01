@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import ODurowoju from "../assets/durowoju.jpg";
 import Sodiya from "../assets/sodiya.jpg";
 import Ebuka from "../assets/ebuka.jpeg";
+import {Link} from "react-router-dom";
 
 const team = [
   {
@@ -153,12 +154,12 @@ export default function Team() {
               cultural innovators.
             </div>
           </div>
-          <a
-            href="/careers"
+          <Link
+            to="/careers"
             className="px-6 py-3 rounded-full bg-[#E9B44C] text-[#0A1931] text-[13px] font-bold whitespace-nowrap"
           >
             View Open Roles →
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
