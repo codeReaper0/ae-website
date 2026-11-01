@@ -12,7 +12,7 @@ import Logo from "../assets/logo.png";
 const navLinks = [
   {name: "Home", href: "/", hash: "#home"},
   {name: "About", href: "/", hash: "#about"},
-  {name: "Services", href: "/", hash: "#services"},
+  //   {name: "Services", href: "/", hash: "#services"},
   {name: "Languages", href: "/", hash: "#languages"},
   {name: "Team", href: "/", hash: "#team"},
   {name: "Store", href: "/", hash: "#store"},
@@ -199,8 +199,7 @@ export default function Navbar() {
               transition={{type: "spring", damping: 30, stiffness: 300}}
               className="fixed top-0 right-0 bottom-0 w-[85%] max-w-[380px] bg-[#FFFBF5] z-50 lg:hidden shadow-[-20px_0_60px_rgba(0,0,0,0.15)] flex flex-col"
             >
-              <div className="h-[80px] px-6 flex items-center justify-between border-b border-[#0A1931]/10">
-                <span className="font-display font-bold">Menu</span>
+              <div className="h-[80px] px-6 py-4 flex items-center justify-end border-b border-[#0A1931]/10">
                 <button
                   onClick={() => setIsOpen(false)}
                   className="w-9 h-9 rounded-full bg-[#0A1931]/10 flex items-center justify-center"
