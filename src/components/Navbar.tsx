@@ -16,6 +16,7 @@ const navLinks = [
   {name: "Languages", href: "/", hash: "#languages"},
   {name: "Team", href: "/", hash: "#team"},
   {name: "Store", href: "/", hash: "#store"},
+  {name: "Careers", href: "/careers"},
   {name: "Contact", href: "/contact"},
 ];
 
@@ -72,12 +73,12 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1 bg-[#0A1931]/5 rounded-full p-1">
             {navLinks.map((link) => {
-              const isContact = link.href === "/contact";
-              const isActive = isContact
-                ? location.pathname === "/contact"
+              const isPage = link.href !== "/";
+              const isActive = isPage
+                ? location.pathname === link.href
                 : location.pathname === "/" && activeHash === link.hash;
 
-              if (isContact) {
+              if (isPage) {
                 return (
                   <Link
                     key={link.name}
@@ -216,7 +217,7 @@ export default function Navbar() {
                       animate={{opacity: 1, x: 0}}
                       transition={{delay: i * 0.05 + 0.1}}
                     >
-                      {link.href === "/contact" ? (
+                      {link.href !== "/" ? (
                         <Link
                           to={link.href}
                           onClick={() => setIsOpen(false)}

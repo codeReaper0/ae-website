@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Careers from "./pages/Careers";
 function ScrollToTop() {
   const {pathname} = useLocation();
   useEffect(() => {
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

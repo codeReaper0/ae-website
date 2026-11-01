@@ -139,6 +139,11 @@ export default function Footer() {
                   Store
                 </button>
               </li>
+              <li>
+                <Link to="/careers" className="hover:text-white transition-colors">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 
