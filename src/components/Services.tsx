@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import {Link} from "react-router-dom";
 import {
   Languages,
   MonitorSmartphone,
@@ -46,6 +47,7 @@ const services = [
     title: "Children’s Animation & Stories",
     desc: "African animation, folklore and graphics courses for children — where culture meets creativity and imagination.",
     features: ["Ages 4-16", "Animation", "Storytelling"],
+    href: "/animated-series",
     color: "bg-[#E85D04]",
     accent: "text-white",
   },
@@ -160,11 +162,20 @@ export default function Services() {
                 ))}
               </div>
 
-              <div
-                className={`mt-6 flex items-center gap-2 text-[13px] font-bold ${s.accent} group-hover:gap-3 transition-all duration-300`}
-              >
-                Explore <span>→</span>
-              </div>
+              {s.href ? (
+                <Link
+                  to={s.href}
+                  className={`mt-6 flex w-fit items-center gap-2 text-[13px] font-bold ${s.accent} transition-all duration-300 hover:gap-3`}
+                >
+                  Explore the animation <span>→</span>
+                </Link>
+              ) : (
+                <div
+                  className={`mt-6 flex items-center gap-2 text-[13px] font-bold ${s.accent} group-hover:gap-3 transition-all duration-300`}
+                >
+                  Explore <span>→</span>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
