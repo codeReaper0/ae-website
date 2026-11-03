@@ -32,14 +32,21 @@ export default function AnimatedSeries() {
             <em className="font-normal text-[#C8963E]">Big adventures.</em>
           </h2>
           <p className="mt-6 max-w-[600px] text-[15px] leading-[1.8] text-[#0A1931]/70">
-            Meet the Ekundayos, an animated family series following siblings Lolade, Dipo, and little Ife as they reconnect with Nigeria. Through funny family moments and exciting discoveries, children can explore Yoruba language, Nigerian traditions, food, music, and the meaning of home.
+            Meet the Ekundayos, celebrating African( Nigeria) and European
+            (Austria) traditions, and the joys of living in Scotland whilst
+            connecting with diveristy around the world. Come along...
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
-            {["Nigerian culture", "Yoruba traditions", "Family adventures"].map((tag) => (
-              <span key={tag} className="rounded-full border border-[#0A1931]/10 bg-white/60 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#0A1931]/65">
-                {tag}
-              </span>
-            ))}
+            {["Nigerian culture", "Yoruba traditions", "Family adventures"].map(
+              (tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-[#0A1931]/10 bg-white/60 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#0A1931]/65"
+                >
+                  {tag}
+                </span>
+              ),
+            )}
           </div>
           <Link
             to="/animated-series"
@@ -62,24 +69,36 @@ export default function AnimatedSeries() {
           <div className="relative">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-3 py-1.5">
               <Sparkles size={13} className="text-[#E9B44C]" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/70">The Ekundayos</span>
+              <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/70">
+                The Ekundayos
+              </span>
             </div>
             <p className="mt-7 max-w-[390px] font-display text-[27px] font-semibold leading-[1.12] md:text-[32px]">
               Three siblings. One unforgettable journey back to their roots.
             </p>
             <div className="mt-9 grid grid-cols-3 gap-3">
               {family.map((person) => (
-                <div key={person.name} className="rounded-[18px] border border-white/10 bg-white/[0.06] p-3 text-center md:p-4">
-                  <div className={`mx-auto flex h-12 w-12 items-center justify-center rounded-full ${person.color} font-display text-[22px] font-bold text-[#0A1931]`}>
+                <div
+                  key={person.name}
+                  className="rounded-[18px] border border-white/10 bg-white/[0.06] p-3 text-center md:p-4"
+                >
+                  <div
+                    className={`mx-auto flex h-12 w-12 items-center justify-center rounded-full ${person.color} font-display text-[22px] font-bold text-[#0A1931]`}
+                  >
                     {person.initial}
                   </div>
-                  <div className="mt-3 text-[12px] font-bold">{person.name}</div>
-                  <div className="mt-0.5 text-[10px] text-white/45">Age {person.age}</div>
+                  <div className="mt-3 text-[12px] font-bold">
+                    {person.name}
+                  </div>
+                  <div className="mt-0.5 text-[10px] text-white/45">
+                    Age {person.age}
+                  </div>
                 </div>
               ))}
             </div>
             <div className="mt-7 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.17em] text-white/45">
-              <span className="h-px w-8 bg-[#E9B44C]" /> Culture comes alive through stories
+              <span className="h-px w-8 bg-[#E9B44C]" /> Culture comes alive
+              through stories
             </div>
           </div>
         </motion.div>
